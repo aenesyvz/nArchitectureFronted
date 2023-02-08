@@ -1,0 +1,12 @@
+import { AuthenticatorType } from "../enums/authenticatorType";
+
+export interface User{
+    id:number;
+    // firstName:string;
+    // lastName:string;
+    email:string;
+    passwordSalt:number[];
+    passwordHash:number[];
+    status:boolean;
+    authenticatorType:AuthenticatorType;
+}
